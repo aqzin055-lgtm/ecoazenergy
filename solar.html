@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Eco AzEnergy - Solar</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo" data-key="logo">ECO AZ ENERGY</a>
+            <div class="nav-links">
+                <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+                <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+                <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+                <a href="projects.html" data-key="nav_projects">Layihələr</a>
+                <a href="about.html" data-key="nav_about">Haqqımızda</a>
+                <div class="lang-selector" id="langSelector"><button class="lang-btn" id="langBtn">AZ</button>
+                    <div class="lang-dropdown">
+                        <button data-lang="az">Azərbaycanca</button><button data-lang="ru">Русский</button><button data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay">
+        <button class="close-menu" id="closeMenu">✕</button>
+        <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+        <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+        <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+        <a href="projects.html" data-key="nav_projects">Layihələr</a>
+        <a href="about.html" data-key="nav_about">Haqqımızda</a>
+        <div style="margin-top: 24px; display: flex; gap: 16px;">
+            <button onclick="applyLanguage('az'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">AZ</button>
+            <button onclick="applyLanguage('ru'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">RU</button>
+            <button onclick="applyLanguage('en'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">EN</button>
+        </div>
+    </div>
+
+    <div class="snap-container">
+        
+        <!-- Hero -->
+        <section class="section">
+            <img class="section-bg" src="assets/images/solar_closeup_1781724301242.png" alt="Solar">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h1 class="section-title" data-key="sol_h1_title">Günəş Enerjisi Sistemləri</h1>
+                <p class="section-subtitle" data-key="sol_h1_sub">Hər evin, hər binanın enerjisi — Günəşdən.</p>
+            </div>
+            <div class="section-buttons">
+                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_order">İndi sifariş ver</a>
+            </div>
+        </section>
+
+        <!-- On-Grid -->
+        <section class="section">
+            <img class="section-bg" src="assets/images/proj_ganja_1781722445981.png" alt="On Grid">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h2 class="section-title" data-key="sol_h2_title">On-Grid Sistem</h2>
+                <p class="section-subtitle" data-key="sol_h2_sub">Şəbəkəyə qoşulun. Artıq enerjini geri satın.</p>
+                <div class="section-info" data-key="sol_h2_info">✓ Şəbəkəyə geri satış ✓ Ən aşağı qiymət ✓ Sürətli geri dönüş</div>
+            </div>
+            <div class="section-buttons">
+                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_order">İndi sifariş ver</a>
+            </div>
+        </section>
+
+        <!-- Off-Grid -->
+        <section class="section">
+            <img class="section-bg" src="assets/images/proj_gadabay_1781722457822.png" alt="Off Grid">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h2 class="section-title" data-key="sol_h3_title">Off-Grid Sistem</h2>
+                <p class="section-subtitle" data-key="sol_h3_sub">Şəbəkə yoxdur? Problem deyil.</p>
+                <div class="section-info" data-key="sol_h3_info">✓ Tam müstəqillik ✓ Gecə boyunca enerji ✓ Uzaq ərazilər üçün</div>
+            </div>
+            <div class="section-buttons">
+                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_order">İndi sifariş ver</a>
+            </div>
+        </section>
+
+        <!-- Hybrid -->
+        <section class="section">
+            <img class="section-bg" src="assets/images/solar_hybrid_1781724289107.png" alt="Hybrid">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h2 class="section-title" data-key="sol_h4_title">Hibrid Sistem</h2>
+                <p class="section-subtitle" data-key="sol_h4_sub">Ən etibarlı həll. Həm şəbəkə, həm batareya.</p>
+                <div class="section-info" data-key="sol_h4_info">✓ Elektrik kəsilməsində işləyir ✓ Geri satış mümkündür</div>
+            </div>
+            <div class="section-buttons">
+                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_order">İndi sifariş ver</a>
+            </div>
+        </section>
+
+        <!-- Brands & Inverters -->
+        <section class="section white-bg" style="min-height: 100vh;">
+            <div class="section-content" style="margin-top: 10vh; margin-bottom: 60px;">
+                <h2 class="section-title" data-key="sol_h5_title" style="color: #171a20;">Dünya brendləri ilə.</h2>
+                <p class="section-subtitle" data-key="sol_h5_sub" style="color: #86868b;">Premium keyfiyyət. Rəsmi zəmanət.</p>
+            </div>
+            
+            <div class="specs-grid" style="margin-bottom: 60px;">
+                <div class="spec-item">
+                    <div class="spec-value">AE-SOLAR</div>
+                    <div class="spec-label" data-key="sol_b1">Almaniya | Aurora Series 550W | Shadow Series 440W</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">LONGI</div>
+                    <div class="spec-label" data-key="sol_b2">Hi-MO 6 | 580W TOPCon | Yüksək verimlilik</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">FAERS</div>
+                    <div class="spec-label" data-key="sol_b3">550W Monokristal | Büdcə dostu</div>
+                </div>
+            </div>
+
+            <div class="section-content" style="margin-bottom: 40px; padding-top:0;">
+                <h2 class="section-title" data-key="sol_h6_title" style="color: #171a20;">İnvertorlar</h2>
+                <p class="section-subtitle" data-key="sol_h6_sub" style="color: #86868b;">Sistemin ürəyi.</p>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="spec-value">GOODWE</div>
+                    <div class="spec-label" data-key="sol_i1">10kW Hibrid | Üç fazalı</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">GROWATT</div>
+                    <div class="spec-label" data-key="sol_i2">5kW On-Grid | Yüksək səmərəlilik</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator -->
+        <section class="section">
+            <img class="section-bg" src="assets/images/hero_solar_1781721115110.png" alt="Calc">
+            <div class="section-overlay" style="background: rgba(0,0,0,0.5);"></div>
+            <div class="section-content">
+                <h2 class="section-title" data-key="sol_calc_title">Sistemini Hesabla</h2>
+            </div>
+            
+            <div class="calc-container" style="z-index: 2; margin-bottom: 10vh;">
+                <div class="calc-row">
+                    <label class="calc-label"><span data-key="sol_calc_lbl1">Aylıq elektrik xərci (AZN)</span>: <span id="sliderVal">50</span> AZN</label>
+                    <input type="range" id="calcSlider" class="calc-slider" min="10" max="500" value="50" step="10">
+                </div>
+                <div class="calc-row calc-tabs">
+                    <button class="calc-tab active" data-sys="ongrid" data-key="sol_calc_on">On-Grid</button>
+                    <button class="calc-tab" data-sys="hybrid" data-key="sol_calc_hyb">Hibrid</button>
+                    <button class="calc-tab" data-sys="offgrid" data-key="sol_calc_off">Off-Grid</button>
+                </div>
+                <button id="calcBtn" class="btn-tesla btn-light" style="width:100%; border:none; height:40px; cursor:pointer;" data-key="btn_calc">Hesabla</button>
+
+                <div id="calcResult" class="calc-result">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:12px; color:#fff; font-size:14px;"><span>Güc:</span> <strong id="resPower">-</strong></div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:12px; color:#fff; font-size:14px;"><span>Panel sayı:</span> <strong id="resPanels">-</strong></div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:12px; color:#fff; font-size:14px;"><span>Təxmini İnvestisiya:</span> <strong id="resInv">-</strong></div>
+                    <div style="display:flex; justify-content:space-between; margin-bottom:12px; color:#fff; font-size:14px;"><span>Geri Dönüş:</span> <strong id="resRoi">-</strong></div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-links">
+                    <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
+                    <a href="#" data-key="footer_privacy">Gizlilik Siyasəti</a>
+                    <a href="#" data-key="footer_contact">Əlaqə: 050 250 19 53</a>
+                </div>
+            </footer>
+        </section>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+</body>
+</html>

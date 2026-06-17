@@ -9,14 +9,16 @@
 </head>
 <body>
 
+    <!-- Desktop Nav -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo" data-key="logo">ECO AZ ENERGY</a>
+            <a href="index.html" class="logo" data-key="logo">ECO AZ ENERGY</a>
             <div class="nav-links">
-                <a href="#solar" data-key="nav_solar">Günəş Enerjisi</a>
-                <a href="#transformer" data-key="nav_transformer">Transformatorlar</a>
-                <a href="#lighting" data-key="nav_lighting">İşıqlandırma</a>
-                <a href="#projects" data-key="nav_projects">Layihələr</a>
+                <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+                <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+                <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+                <a href="projects.html" data-key="nav_projects">Layihələr</a>
+                <a href="about.html" data-key="nav_about">Haqqımızda</a>
                 <div class="lang-selector" id="langSelector">
                     <button class="lang-btn" id="langBtn">AZ</button>
                     <div class="lang-dropdown">
@@ -26,87 +28,93 @@
                     </div>
                 </div>
             </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
         </div>
     </nav>
 
+    <!-- Mobile Nav -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <button class="close-menu" id="closeMenu">✕</button>
+        <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+        <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+        <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+        <a href="projects.html" data-key="nav_projects">Layihələr</a>
+        <a href="about.html" data-key="nav_about">Haqqımızda</a>
+        <div style="margin-top: 24px; display: flex; gap: 16px;">
+            <button onclick="applyLanguage('az'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">AZ</button>
+            <button onclick="applyLanguage('ru'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">RU</button>
+            <button onclick="applyLanguage('en'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">EN</button>
+        </div>
+    </div>
+
     <div class="snap-container">
         
-        <!-- Section 1: Hero -->
+        <!-- Hero -->
         <section class="section" id="hero">
             <img class="section-bg" src="assets/images/proj_jabrayil_1781722434712.png" alt="Hero">
             <div class="section-overlay"></div>
-            
             <div class="section-content">
-                <h1 class="section-title" data-key="hero_title">Sabahı gücləndiririk.</h1>
-                <p class="section-subtitle" data-key="hero_subtitle">Daha təmiz və güclü bir gələcək üçün.</p>
+                <h1 class="section-title" data-key="idx_h1_title">Sabahı gücləndiririk.</h1>
+                <p class="section-subtitle" data-key="idx_h1_sub">Daha təmiz və güclü bir gələcək üçün.</p>
             </div>
-
             <div class="section-buttons">
-                <a href="#solar" class="btn-tesla btn-dark" data-key="btn_explore">Kəşf et</a>
-                <a href="#contact" class="btn-tesla btn-light" data-key="btn_consult">Sifariş ver</a>
+                <a href="solar.html" class="btn-tesla btn-dark" data-key="btn_explore">Kəşf et</a>
+                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_contact">Əlaqə saxla</a>
             </div>
         </section>
 
-        <!-- Section 2: Solar Panels -->
+        <!-- Solar -->
         <section class="section" id="solar">
-            <img class="section-bg" src="assets/images/solar_product_1781721126145.png" alt="Solar Panels">
+            <img class="section-bg" src="assets/images/solar_product_1781721126145.png" alt="Solar">
             <div class="section-overlay"></div>
-            
             <div class="section-content">
-                <h2 class="section-title" data-key="solar_title">Günəş Sistemləri</h2>
-                <p class="section-subtitle" data-key="solar_subtitle">On-Grid, Off-Grid və Hibrid Həllər</p>
+                <h2 class="section-title" data-key="idx_h2_title">Günəş Sistemləri</h2>
+                <p class="section-subtitle" data-key="idx_h2_sub">On-Grid, Off-Grid və Hibrid Həllər</p>
             </div>
-
             <div class="section-buttons">
-                <a href="#" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
-                <a href="#" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
+                <a href="about.html#contact" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
+                <a href="solar.html" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
             </div>
         </section>
 
-        <!-- Section 3: Transformers -->
+        <!-- Transformers -->
         <section class="section" id="transformer">
             <img class="section-bg" src="assets/images/bento_transformer_1781722413479.png" alt="Transformers">
             <div class="section-overlay"></div>
-            
             <div class="section-content">
-                <h2 class="section-title" data-key="trans_title">Transformatorlar</h2>
-                <p class="section-subtitle" data-key="trans_subtitle">2500 KVA-a qədər gücləndirilmiş stansiyalar</p>
+                <h2 class="section-title" data-key="idx_h3_title">Transformatorlar</h2>
+                <p class="section-subtitle" data-key="idx_h3_sub">2500 KVA-a qədər gücləndirilmiş stansiyalar</p>
             </div>
-
             <div class="section-buttons">
-                <a href="#" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
-                <a href="#" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
+                <a href="about.html#contact" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
+                <a href="transformers.html" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
             </div>
         </section>
 
-        <!-- Section 4: Road Lighting -->
+        <!-- Lighting -->
         <section class="section" id="lighting">
-            <img class="section-bg" src="assets/images/bento_lighting_1781722424659.png" alt="Road Lighting">
+            <img class="section-bg" src="assets/images/bento_lighting_1781722424659.png" alt="Lighting">
             <div class="section-overlay"></div>
-            
             <div class="section-content">
-                <h2 class="section-title" data-key="light_title">Yol İşıqlandırması</h2>
-                <p class="section-subtitle" data-key="light_subtitle">Ağıllı idarəetmə ilə 70% enerji qənaəti</p>
+                <h2 class="section-title" data-key="idx_h4_title">Yol İşıqlandırması</h2>
+                <p class="section-subtitle" data-key="idx_h4_sub">Ağıllı idarəetmə ilə 70% enerji qənaəti</p>
             </div>
-
             <div class="section-buttons">
-                <a href="#" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
-                <a href="#" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
+                <a href="about.html#contact" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
+                <a href="lighting.html" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
             </div>
         </section>
 
-        <!-- Section 5: Projects / Final Contact -->
+        <!-- Projects & Footer -->
         <section class="section" id="projects">
             <img class="section-bg" src="assets/images/hero_solar_1781721115110.png" alt="Projects">
             <div class="section-overlay" style="background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 100%);"></div>
-            
             <div class="section-content">
-                <h2 class="section-title" data-key="projects_title">Cəbrayıl Mega Layihəsi</h2>
-                <p class="section-subtitle" data-key="projects_subtitle">Azərbaycanda 200+ icra edilmiş layihədən biri.</p>
+                <h2 class="section-title" data-key="idx_h5_title">200+ Uğurlu Layihə</h2>
+                <p class="section-subtitle" data-key="idx_h5_sub">Azərbaycanın hər bölgəsində.</p>
             </div>
-
-            <div class="section-buttons" id="contact" style="margin-bottom: 12vh;">
-                <a href="mailto:ecoazenergy@gmail.com" class="btn-tesla btn-light" data-key="btn_contact">Bizimlə Əlaqə</a>
+            <div class="section-buttons" style="margin-bottom: 15vh;">
+                <a href="projects.html" class="btn-tesla btn-light" data-key="btn_projects">Layihələrə bax</a>
             </div>
 
             <footer class="footer">
@@ -122,76 +130,6 @@
 
     </div>
 
-    <script>
-        // Language translations for Tesla Style
-        const translations = {
-            az: {
-                logo: "ECO AZ ENERGY", nav_solar: "Günəş Enerjisi", nav_transformer: "Transformatorlar", nav_lighting: "İşıqlandırma", nav_projects: "Layihələr",
-                hero_title: "Sabahı gücləndiririk.", hero_subtitle: "Daha təmiz və güclü bir gələcək üçün.",
-                solar_title: "Günəş Sistemləri", solar_subtitle: "On-Grid, Off-Grid və Hibrid Həllər",
-                trans_title: "Transformatorlar", trans_subtitle: "2500 KVA-a qədər gücləndirilmiş stansiyalar",
-                light_title: "Yol İşıqlandırması", light_subtitle: "Ağıllı idarəetmə ilə 70% enerji qənaəti",
-                projects_title: "Cəbrayıl Mega Layihəsi", projects_subtitle: "Azərbaycanda 200+ icra edilmiş layihədən biri.",
-                btn_explore: "Kəşf et", btn_consult: "Sifariş ver", btn_order: "İndi sifariş ver", btn_learn: "Daha çox öyrən", btn_contact: "Bizimlə Əlaqə",
-                footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Gizlilik Siyasəti", footer_contact: "Əlaqə: 050 250 19 53"
-            },
-            ru: {
-                logo: "ECO AZ ENERGY", nav_solar: "Солнечная Энергия", nav_transformer: "Трансформаторы", nav_lighting: "Освещение", nav_projects: "Проекты",
-                hero_title: "Укрепляем будущее.", hero_subtitle: "Для более чистого и сильного будущего.",
-                solar_title: "Солнечные Системы", solar_subtitle: "On-Grid, Off-Grid и Гибридные решения",
-                trans_title: "Трансформаторы", trans_subtitle: "Усиленные станции до 2500 КВА",
-                light_title: "Дорожное Освещение", light_subtitle: "Экономия энергии 70% с умным управлением",
-                projects_title: "Мегапроект Джабраил", projects_subtitle: "Один из 200+ реализованных проектов в Азербайджане.",
-                btn_explore: "Исследовать", btn_consult: "Заказать", btn_order: "Заказать сейчас", btn_learn: "Узнать больше", btn_contact: "Связаться с нами",
-                footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Политика Конфиденциальности", footer_contact: "Контакты: 050 250 19 53"
-            },
-            en: {
-                logo: "ECO AZ ENERGY", nav_solar: "Solar Energy", nav_transformer: "Transformers", nav_lighting: "Lighting", nav_projects: "Projects",
-                hero_title: "Powering tomorrow.", hero_subtitle: "For a cleaner and stronger future.",
-                solar_title: "Solar Systems", solar_subtitle: "On-Grid, Off-Grid and Hybrid Solutions",
-                trans_title: "Transformers", trans_subtitle: "Reinforced stations up to 2500 KVA",
-                light_title: "Road Lighting", light_subtitle: "70% energy savings with smart control",
-                projects_title: "Jabrayil Mega Project", projects_subtitle: "One of 200+ implemented projects in Azerbaijan.",
-                btn_explore: "Explore", btn_consult: "Order", btn_order: "Order Now", btn_learn: "Learn More", btn_contact: "Contact Us",
-                footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Privacy Policy", footer_contact: "Contact: 050 250 19 53"
-            }
-        };
-
-        let currentLang = 'az';
-
-        function applyLanguage(lang) {
-            const t = translations[lang];
-            document.querySelectorAll('[data-key]').forEach(el => {
-                const key = el.getAttribute('data-key');
-                if (t[key] !== undefined) {
-                    el.innerText = t[key];
-                }
-            });
-            const langBtn = document.getElementById('langBtn');
-            if (langBtn) {
-                langBtn.innerText = lang.toUpperCase();
-            }
-            currentLang = lang;
-        }
-
-        const selector = document.getElementById('langSelector');
-        const btn = document.getElementById('langBtn');
-        if (btn && selector) {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                selector.classList.toggle('open');
-            });
-            document.querySelectorAll('.lang-dropdown button').forEach(button => {
-                button.addEventListener('click', () => {
-                    const lang = button.getAttribute('data-lang');
-                    if (lang) applyLanguage(lang);
-                    selector.classList.remove('open');
-                });
-            });
-            document.addEventListener('click', () => selector.classList.remove('open'));
-        }
-
-        applyLanguage('az');
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

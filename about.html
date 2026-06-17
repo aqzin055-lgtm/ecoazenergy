@@ -1,193 +1,143 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haqqımızda | Eco Az Energy</title>
-  
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/pages/about.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Eco AzEnergy - About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="fade-out">
+<body>
 
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-logo">Eco<span class="logo-dot">⬤</span>Az Energy</a>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Ana Səhifə</a>
-        <div class="nav-dropdown-wrapper">
-          <a href="solar-panels.html" class="nav-link">Günəş Panelləri</a>
-          <div class="nav-dropdown">
-            <a href="solar-panels.html" class="dropdown-item">On-Grid Sistemlər</a>
-            <a href="solar-panels.html" class="dropdown-item">Off-Grid Sistemlər</a>
-            <a href="solar-panels.html" class="dropdown-item">Hibrid Sistemlər</a>
-            <a href="solar-panels.html#calculator" class="dropdown-item">Günəş Paneli Hesablama</a>
-          </div>
+    <!-- Nav -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo" data-key="logo">ECO AZ ENERGY</a>
+            <div class="nav-links">
+                <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+                <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+                <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+                <a href="projects.html" data-key="nav_projects">Layihələr</a>
+                <a href="about.html" data-key="nav_about">Haqqımızda</a>
+                <div class="lang-selector" id="langSelector"><button class="lang-btn" id="langBtn">AZ</button>
+                    <div class="lang-dropdown">
+                        <button data-lang="az">Azərbaycanca</button><button data-lang="ru">Русский</button><button data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
         </div>
-        <a href="transformers.html" class="nav-link">Transformatorlar</a>
-        <a href="road-lighting.html" class="nav-link">Yol İşıqlandırması</a>
-        <a href="projects.html" class="nav-link">Layihələr</a>
-        <a href="about.html" class="nav-link active">Haqqımızda</a>
-        <a href="contact.html" class="nav-link">Əlaqə</a>
-      </div>
-      <div class="nav-actions">
-        <a href="contact.html" class="btn btn-primary">Konsultasiya Al</a>
-      </div>
-      <div class="mobile-toggle">
-        <span></span><span></span><span></span>
-      </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay">
+        <button class="close-menu" id="closeMenu">✕</button>
+        <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+        <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+        <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+        <a href="projects.html" data-key="nav_projects">Layihələr</a>
+        <a href="about.html" data-key="nav_about">Haqqımızda</a>
+        <div style="margin-top: 24px; display: flex; gap: 16px;">
+            <button onclick="applyLanguage('az'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">AZ</button>
+            <button onclick="applyLanguage('ru'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">RU</button>
+            <button onclick="applyLanguage('en'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">EN</button>
+        </div>
     </div>
-  </nav>
 
-  <div class="mobile-menu">
-    <a href="index.html" class="nav-link">Ana Səhifə</a>
-    <a href="solar-panels.html" class="nav-link">Günəş Panelləri</a>
-    <a href="transformers.html" class="nav-link">Transformatorlar</a>
-    <a href="road-lighting.html" class="nav-link">Yol İşıqlandırması</a>
-    <a href="projects.html" class="nav-link">Layihələr</a>
-    <a href="about.html" class="nav-link active">Haqqımızda</a>
-    <a href="contact.html" class="nav-link">Əlaqə</a>
-    <a href="contact.html" class="btn btn-primary mt-8">Konsultasiya Al</a>
-  </div>
+    <div class="snap-container">
+        
+        <!-- Hero -->
+        <section class="section">
+            <img class="section-bg" src="assets/images/team_hero_1781724322452.png" alt="About Hero">
+            <div class="section-overlay"></div>
+            <div class="section-content">
+                <h1 class="section-title" data-key="ab_h1_title">Eco Az Energy</h1>
+                <p class="section-subtitle" data-key="ab_h1_sub">2004-cü ildən bəri enerji sektorunda innovativ mühəndislik.</p>
+            </div>
+            <div class="section-buttons">
+                <a href="#about-info" class="btn-tesla btn-light" data-key="btn_explore">Kəşf et</a>
+            </div>
+        </section>
 
-  <main>
-    <header class="about-hero fade-up">
-      <div class="container">
-        <div class="breadcrumb">
-          <a href="index.html">Ana Səhifə</a> <span>/</span> Haqqımızda
-        </div>
-        <h1 class="text-h1 mb-4">Haqqımızda</h1>
-        <p class="text-secondary max-w-2xl mx-auto">2004-cü ildən enerji sektorunun etibarlı tərəfdaşı</p>
-      </div>
-    </header>
+        <!-- About Text -->
+        <section class="section white-bg" id="about-info" style="min-height: 100vh;">
+            <div class="section-content" style="margin-top: 20vh; text-align:left; max-width: 1000px; width: 100%;">
+                <h2 class="section-title" data-key="ab_h2_title" style="color:#171a20; margin-bottom: 24px;">Geniş profilli mühəndislik və texniki xidmət şirkəti.</h2>
+                <p data-key="ab_p1" style="font-size:18px; line-height:1.6; color:#86868b; margin-bottom:24px;">Biz transformatorların quraşdırılması, yüksək gərginlikli hava xətlərinin çəkilməsi, elektrik təchizatı və işıqlandırma sistemlərinin tam layihələndirilib qurulması sahəsində peşəkar xidmətlər göstəririk.</p>
+                <p data-key="ab_p2" style="font-size:18px; line-height:1.6; color:#86868b;">Beynəlxalq keyfiyyət standartlarına uyğun olaraq AE-Solar, Longi, GoodWe və Growatt kimi dünya brendləri ilə tərəfdaşlıq edirik.</p>
+            </div>
+        </section>
 
-    <section class="container mt-8 fade-up">
-      <div class="about-content">
-        <p>Eco Az Energy 2004-cü ildən enerji sektorunda fəaliyyət göstərən, geniş profilli mühəndislik və texniki xidmət şirkətidir. Şirkətimiz transformatorların quraşdırılması, yüksək gərginlikli hava xətlərinin çəkilməsi, elektrik təchizatı sistemlərinin qurulması, işıqlandırma sistemlərinin qurulması, layihələndirilməsi və istismara verilməsi sahələrində peşəkar xidmətlər göstərir.</p>
-        <p class="mt-4">Həmçinin bir çox tanınmış günəş paneli, inverter və batareya brendlərinin Azərbaycana idxalçısıdır. Satışı və quraşdırılması ilə məşğuldur.</p>
-      </div>
-    </section>
+        <!-- Team -->
+        <section class="section" style="background-color: #121212;">
+            <div class="section-content" style="margin-top: 15vh;">
+                <h2 class="section-title" data-key="ab_h3_title">Komanda</h2>
+            </div>
+            <div class="specs-grid" style="margin-bottom: 20vh; gap: 20px; max-width:1200px;">
+                <div class="spec-item" style="background:#1c1c1e; padding:40px; border-radius:8px;">
+                    <div class="spec-value" style="color:#fff;" data-key="ab_t1_name">Həmzə Vəliyev</div>
+                    <div class="spec-label" data-key="ab_t1_role">Təsisçi Direktor | 20 il təcrübə</div>
+                </div>
+                <div class="spec-item" style="background:#1c1c1e; padding:40px; border-radius:8px;">
+                    <div class="spec-value" style="color:#fff;" data-key="ab_t2_name">Rövşən Namazov</div>
+                    <div class="spec-label" data-key="ab_t2_role">Baş Mühəndis | Elektrik mühəndisliyi</div>
+                </div>
+                <div class="spec-item" style="background:#1c1c1e; padding:40px; border-radius:8px;">
+                    <div class="spec-value" style="color:#fff;" data-key="ab_t3_name">Rəvan Məmmədli</div>
+                    <div class="spec-label" data-key="ab_t3_role">Dizayner Mühəndis | AutoCAD</div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Stats section reused from homepage CSS/JS -->
-    <section class="stats-section fade-up mt-8" style="background:var(--bg-primary); border:none;">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="200">0</span>+</div>
-            <div class="stat-label">İcra Edilmiş Layihə</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="424">0</span></div>
-            <div class="stat-label">Ev Mega Layihəsi</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="60">0</span>%</div>
-            <div class="stat-label">Enerji Qənaəti</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="20">0</span></div>
-            <div class="stat-label">İllik Təcrübə</div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Why Us -->
+        <section class="section white-bg" style="min-height: 100vh;">
+            <div class="section-content" style="margin-top: 15vh;">
+                <h2 class="section-title" data-key="ab_h4_title" style="color:#171a20;">Niyə Biz?</h2>
+            </div>
+            <div class="specs-grid" style="margin-bottom: 20vh; max-width:1000px; grid-template-columns: repeat(2, 1fr);">
+                <div class="spec-item"><div class="spec-value" style="font-size:24px;">✓</div><div class="spec-label" data-key="ab_w1">Sübut edilmiş təcrübə</div></div>
+                <div class="spec-item"><div class="spec-value" style="font-size:24px;">✓</div><div class="spec-label" data-key="ab_w2">Dünya standartları</div></div>
+                <div class="spec-item"><div class="spec-value" style="font-size:24px;">✓</div><div class="spec-label" data-key="ab_w3">Enerji qənaəti (60%)</div></div>
+                <div class="spec-item"><div class="spec-value" style="font-size:24px;">✓</div><div class="spec-label" data-key="ab_w4">Tam texniki dəstək</div></div>
+                <div class="spec-item"><div class="spec-value" style="font-size:24px;">✓</div><div class="spec-label" data-key="ab_w5">Hüquqi dəstək (AYNA)</div></div>
+                <div class="spec-item"><div class="spec-value" style="font-size:24px;">✓</div><div class="spec-label" data-key="ab_w6">İnnovativ yanaşma</div></div>
+            </div>
+        </section>
 
-    <section class="container mt-8 mb-8 fade-up">
-      <div class="section-header text-center">
-        <h2 class="text-h2">Komandamız</h2>
-      </div>
-      
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="avatar">HV</div>
-          <h3 class="team-name">Həmzə Vəliyev</h3>
-          <div class="team-role">Təsisçi Direktor</div>
-          <div class="team-exp">
-            <ul>
-              <li>Enerji sektorunda 20 il təcrübə</li>
-              <li>200+ layihənin rəhbəri</li>
-              <li>Beynəlxalq əməkdaşlıq təcrübəsi</li>
-            </ul>
-          </div>
-        </div>
+        <!-- Partners & Contact -->
+        <section class="section" id="contact" style="background-color: #000;">
+            <div class="section-content" style="padding-top:10vh;">
+                <h2 class="section-title" data-key="ab_h5_title" style="font-size:24px;">Partnyorlar</h2>
+                <p style="opacity:0.6; font-size:14px; margin-top:16px; word-spacing: 16px;">AE-SOLAR LONGI GOODWE GROWATT SIEMENS LS-ELECTRIC HYUNDAI-ELECTRIC TOMMATECH</p>
+            </div>
+            
+            <div style="display:flex; flex-wrap:wrap; gap:80px; max-width:1000px; width:100%; padding:40px 24px; margin-bottom: 15vh;">
+                <div style="flex:1;">
+                    <h2 class="section-title" data-key="ab_h6_title" style="text-align:left; font-size:24px; margin-bottom:32px;">Əlaqə</h2>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Müraciətiniz göndərildi.'); this.reset();">
+                        <input type="text" data-key="ab_c_name" placeholder="Adınız" required>
+                        <input type="email" data-key="ab_c_email" placeholder="E-poçt" required>
+                        <textarea data-key="ab_c_msg" placeholder="Mesaj" rows="2" required></textarea>
+                        <button type="submit" class="btn-tesla btn-light" data-key="btn_submit" style="width:100%;">Göndər</button>
+                    </form>
+                </div>
+                <div style="flex:1;" class="contact-info-list">
+                    <p data-key="ab_c_info1">ecoazenergy@gmail.com</p>
+                    <p data-key="ab_c_info2">050 250 19 53</p>
+                    <p data-key="ab_c_info3">Bakı ş. Ağ Şəhər Yaşıl Ada 2. küçəsi</p>
+                    <p data-key="ab_c_info4">Zaqatala r. Bizim İnşaat</p>
+                </div>
+            </div>
 
-        <div class="team-card">
-          <div class="avatar">RN</div>
-          <h3 class="team-name">Rövşən Namazov</h3>
-          <div class="team-role">Baş Mühəndis</div>
-          <div class="team-exp">
-            <ul>
-              <li>Elektrik mühəndisliyi üzrə ixtisas</li>
-              <li>On-Grid/Off-Grid/Hibrid layihələr</li>
-              <li>Texniki nəzarət və dəstək</li>
-            </ul>
-          </div>
-        </div>
+            <footer class="footer">
+                <div class="footer-links">
+                    <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
+                    <a href="#" data-key="footer_privacy">Gizlilik Siyasəti</a>
+                    <a href="#" data-key="footer_contact">Əlaqə: 050 250 19 53</a>
+                </div>
+            </footer>
+        </section>
 
-        <div class="team-card">
-          <div class="avatar">RM</div>
-          <h3 class="team-name">Rəvan Məmmədli</h3>
-          <div class="team-role">Dizayner Mühəndis</div>
-          <div class="team-exp">
-            <ul>
-              <li>Texniki layihələndirmə</li>
-              <li>AutoCAD / CAD dizayn</li>
-              <li>Günəş sistemlərinin layihələndirilməsi</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col brand-col">
-          <a href="index.html" class="nav-logo mb-4" style="display: flex; gap: 0.5rem; font-weight: 600;">Eco<span class="logo-dot">⬤</span>Az Energy</a>
-          <p class="text-secondary text-small">2004-cü ildən Azərbaycanda enerji həlləri.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Xidmətlər</h4>
-          <div class="footer-links">
-            <a href="solar-panels.html" class="footer-link">Günəş Enerjisi</a>
-            <a href="transformers.html" class="footer-link">Transformatorlar</a>
-            <a href="road-lighting.html" class="footer-link">Yol İşıqlandırması</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Şirkət</h4>
-          <div class="footer-links">
-            <a href="about.html" class="footer-link">Haqqımızda</a>
-            <a href="projects.html" class="footer-link">Layihələr</a>
-            <a href="index.html#partners" class="footer-link">Partnyorlar</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Əlaqə</h4>
-          <div class="footer-links text-small text-secondary">
-            <p>ecoazenergy@gmail.com</p>
-            <p>+994 50 250 19 53</p>
-            <p>Bakı ş. Ağ Şəhər</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Eco Az Energy. Bütün hüquqlar qorunur.</p>
-        <p>Azərbaycanda hazırlanıb 🇦🇿</p>
-      </div>
     </div>
-  </footer>
 
-  <a href="#" id="back-to-top">↑</a>
-  
-  <script src="js/main.js"></script>
-  <!-- Use counter.js for stats -->
-  <script src="js/counter.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
