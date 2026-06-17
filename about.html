@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Eco AzEnergy - About Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Nav -->
     <nav>
         <div class="nav-container">
             <a href="index.html" class="logo" data-key="logo">ECO AZ ENERGY</a>
@@ -37,50 +36,54 @@
         <a href="about.html" data-key="nav_about">Haqqımızda</a>
     </div>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero reveal">
+    <header class="cinematic-hero" style="height: 60vh;">
+        <img src="assets/images/team_hero_1781724322452.png" alt="Team" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal active">
             <h1 class="hero-title" data-key="ab_h1_title">Eco Az Energy</h1>
             <p class="hero-subtitle" data-key="ab_h1_sub">2004-cü ildən mühəndislik innovasiyası.</p>
-            <div class="hero-img-container reveal" style="max-width: 900px;">
-                <img src="assets/images/team_hero_1781724322452.png" alt="Team" class="hero-img">
-            </div>
-            <p class="hero-subtitle mt-4 reveal" data-key="ab_p1" style="max-width: 800px;">Transformatorlar, xətlər və işıqlandırma üzrə professional layihələndirmə.</p>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="cinematic-hero reveal" style="height: auto; padding: 120px 20px; background: #000;">
+            <h1 class="hero-title" style="font-size: 32px; max-width: 800px; line-height: 1.4;" data-key="ab_p1">Transformatorlar, xətlər və işıqlandırma üzrə professional layihələndirmə.</h1>
         </section>
 
-        <!-- Stats Bento -->
         <section class="bento-section" style="padding-top:0;">
             <div class="bento-grid" style="grid-template-columns: repeat(3, 1fr);">
                 
                 <div class="bento-item reveal" style="text-align: center;">
-                    <h2 class="bento-title" style="font-size: 48px;" data-key="ab_t1">20 il</h2>
+                    <h2 class="bento-title" style="font-size: 56px;" data-key="ab_t1">20 il</h2>
                     <p class="bento-desc" data-key="ab_t1_desc">Təcrübə</p>
                 </div>
 
                 <div class="bento-item reveal" style="text-align: center;">
-                    <h2 class="bento-title" style="font-size: 48px;" data-key="ab_t2">200+</h2>
+                    <h2 class="bento-title" style="font-size: 56px;" data-key="ab_t2">200+</h2>
                     <p class="bento-desc" data-key="ab_t2_desc">Layihə</p>
                 </div>
 
                 <div class="bento-item reveal" style="text-align: center;">
-                    <h2 class="bento-title" style="font-size: 48px; color: var(--apple-blue);" data-key="ab_t3">60%</h2>
+                    <h2 class="bento-title" style="font-size: 56px; color: var(--apple-blue);" data-key="ab_t3">60%</h2>
                     <p class="bento-desc" data-key="ab_t3_desc">Qənaət</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- Contact Form Section -->
-        <section class="hero reveal" style="padding-top: 40px; padding-bottom: 80px;">
-            <h1 class="section-headline" data-key="btn_contact">Əlaqə</h1>
-            <div class="calc-box reveal" style="max-width: 500px; padding: 40px;">
+        <section class="cinematic-hero reveal" style="height: auto; padding: 120px 20px;">
+            <img src="assets/images/proj_jabrayil_1781722434712.png" alt="Contact BG" class="hero-bg" style="filter: brightness(0.2);">
+            <div class="hero-overlay"></div>
+            
+            <h1 class="section-headline" data-key="btn_contact" style="position:relative; z-index:2;">Əlaqə</h1>
+            <div class="calc-box reveal" style="position:relative; z-index:2; max-width: 500px; padding: 40px;">
                 <form class="contact-form" onsubmit="event.preventDefault(); alert('Müraciətiniz göndərildi.'); this.reset();">
                     <input type="text" class="contact-input" data-key="ab_c_name" placeholder="Adınız" required>
                     <input type="email" class="contact-input" data-key="ab_c_email" placeholder="E-poçt" required>
                     <textarea class="contact-input" data-key="ab_c_msg" placeholder="Mesajınız" rows="4" required></textarea>
                     <button type="submit" class="btn btn-primary" data-key="btn_submit" style="width:100%;">Göndər</button>
                 </form>
-                <p class="text-center mt-4" style="font-size: 14px; color: var(--text-secondary);" data-key="ab_c_info">Bizimlə əlaqə: ecoazenergy@gmail.com</p>
+                <p class="text-center mt-4" style="font-size: 15px; color: #fff;" data-key="ab_c_info">Bizimlə əlaqə: ecoazenergy@gmail.com</p>
             </div>
         </section>
 

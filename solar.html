@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Eco AzEnergy - Solar</title>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Nav -->
     <nav>
         <div class="nav-container">
             <a href="index.html" class="logo" data-key="logo">ECO AZ ENERGY</a>
@@ -37,16 +36,17 @@
         <a href="about.html" data-key="nav_about">Haqqımızda</a>
     </div>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero reveal">
+    <!-- Cinematic Hero -->
+    <header class="cinematic-hero" style="height: 70vh;">
+        <img src="assets/images/solar_closeup_1781724301242.png" alt="Solar Closeup" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal active">
             <h1 class="hero-title" data-key="sol_h1_title">Günəş Enerjisi</h1>
             <p class="hero-subtitle" data-key="sol_h1_sub">Hər evin enerjisi günəşdən.</p>
-            <div class="hero-img-container reveal" style="max-width: 900px;">
-                <img src="assets/images/solar_closeup_1781724301242.png" alt="Solar Closeup" class="hero-img">
-            </div>
-        </section>
+        </div>
+    </header>
 
+    <main class="content-wrapper">
         <!-- Bento Grid Sections -->
         <section class="bento-section">
             <div class="bento-grid">
@@ -84,16 +84,18 @@
             </div>
         </section>
 
-        <!-- Brands Dark Section -->
-        <section class="dark-section reveal">
+        <section class="cinematic-hero reveal" style="height: auto; padding: 120px 20px; background: #000;">
             <h1 class="hero-title" data-key="sol_h5_title">Dünya Brendləri</h1>
             <p class="hero-subtitle" data-key="sol_h5_sub">AE-Solar, Longi, GoodWe, Growatt.</p>
         </section>
 
         <!-- Calculator Section -->
-        <section class="hero reveal" style="padding-top: 80px; padding-bottom: 80px;">
-            <h1 class="section-headline" data-key="sol_calc_title">Sistemini Hesabla</h1>
-            <div class="calc-box reveal">
+        <section class="cinematic-hero reveal" style="height: auto; padding: 120px 20px;">
+            <img src="assets/images/hero_solar_1781721115110.png" alt="Calc BG" class="hero-bg" style="filter: brightness(0.3);">
+            <div class="hero-overlay"></div>
+            
+            <h1 class="section-headline" data-key="sol_calc_title" style="position:relative; z-index:2;">Sistemini Hesabla</h1>
+            <div class="calc-box reveal" style="position:relative; z-index:2;">
                 <label class="calc-label"><span data-key="sol_calc_lbl1">Aylıq xərc (AZN)</span>: <span id="sliderVal">50</span> AZN</label>
                 <input type="range" id="calcSlider" class="calc-slider" min="10" max="500" value="50" step="10">
                 
@@ -103,7 +105,7 @@
                     <button class="calc-tab" data-sys="offgrid" data-key="sol_calc_off">Off-Grid</button>
                 </div>
                 
-                <button id="calcBtn" class="btn btn-primary" style="width:100%; border-radius: 12px;" data-key="btn_calc">Hesabla</button>
+                <button id="calcBtn" class="btn btn-primary" style="width:100%;" data-key="btn_calc">Hesabla</button>
 
                 <div id="calcResult" class="calc-result">
                     <div class="res-row"><span>Güc:</span> <strong id="resPower">-</strong></div>
