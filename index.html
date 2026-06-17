@@ -1,307 +1,197 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Az Energy | Günəş Panelləri, Transformatorlar, Yol İşıqlandırması</title>
-  <meta name="description" content="2004-cü ildən Azərbaycanda 200+ layihə. On-Grid, Off-Grid və Hibrid günəş sistemləri, transformatorların quraşdırılması.">
-  
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/pages/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Eco AzEnergy</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="fade-out">
+<body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-logo">Eco<span class="logo-dot">⬤</span>Az Energy</a>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link active">Ana Səhifə</a>
-        <div class="nav-dropdown-wrapper">
-          <a href="solar-panels.html" class="nav-link">Günəş Panelləri</a>
-          <div class="nav-dropdown">
-            <a href="solar-panels.html" class="dropdown-item">On-Grid Sistemlər</a>
-            <a href="solar-panels.html" class="dropdown-item">Off-Grid Sistemlər</a>
-            <a href="solar-panels.html" class="dropdown-item">Hibrid Sistemlər</a>
-            <a href="solar-panels.html#calculator" class="dropdown-item">Günəş Paneli Hesablama</a>
-          </div>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo" data-key="logo">ECO AZ ENERGY</a>
+            <div class="nav-links">
+                <a href="#solar" data-key="nav_solar">Günəş Enerjisi</a>
+                <a href="#transformer" data-key="nav_transformer">Transformatorlar</a>
+                <a href="#lighting" data-key="nav_lighting">İşıqlandırma</a>
+                <a href="#projects" data-key="nav_projects">Layihələr</a>
+                <div class="lang-selector" id="langSelector">
+                    <button class="lang-btn" id="langBtn">AZ</button>
+                    <div class="lang-dropdown">
+                        <button data-lang="az">Azərbaycanca</button>
+                        <button data-lang="ru">Русский</button>
+                        <button data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="transformers.html" class="nav-link">Transformatorlar</a>
-        <a href="road-lighting.html" class="nav-link">Yol İşıqlandırması</a>
-        <a href="projects.html" class="nav-link">Layihələr</a>
-        <a href="about.html" class="nav-link">Haqqımızda</a>
-        <a href="contact.html" class="nav-link">Əlaqə</a>
-      </div>
-      <div class="nav-actions">
-        <a href="contact.html" class="btn btn-primary">Konsultasiya Al</a>
-      </div>
-      <div class="mobile-toggle">
-        <span></span><span></span><span></span>
-      </div>
+    </nav>
+
+    <div class="snap-container">
+        
+        <!-- Section 1: Hero -->
+        <section class="section" id="hero">
+            <img class="section-bg" src="assets/images/proj_jabrayil_1781722434712.png" alt="Hero">
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <h1 class="section-title" data-key="hero_title">Sabahı gücləndiririk.</h1>
+                <p class="section-subtitle" data-key="hero_subtitle">Daha təmiz və güclü bir gələcək üçün.</p>
+            </div>
+
+            <div class="section-buttons">
+                <a href="#solar" class="btn-tesla btn-dark" data-key="btn_explore">Kəşf et</a>
+                <a href="#contact" class="btn-tesla btn-light" data-key="btn_consult">Sifariş ver</a>
+            </div>
+        </section>
+
+        <!-- Section 2: Solar Panels -->
+        <section class="section" id="solar">
+            <img class="section-bg" src="assets/images/solar_product_1781721126145.png" alt="Solar Panels">
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <h2 class="section-title" data-key="solar_title">Günəş Sistemləri</h2>
+                <p class="section-subtitle" data-key="solar_subtitle">On-Grid, Off-Grid və Hibrid Həllər</p>
+            </div>
+
+            <div class="section-buttons">
+                <a href="#" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
+                <a href="#" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
+            </div>
+        </section>
+
+        <!-- Section 3: Transformers -->
+        <section class="section" id="transformer">
+            <img class="section-bg" src="assets/images/bento_transformer_1781722413479.png" alt="Transformers">
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <h2 class="section-title" data-key="trans_title">Transformatorlar</h2>
+                <p class="section-subtitle" data-key="trans_subtitle">2500 KVA-a qədər gücləndirilmiş stansiyalar</p>
+            </div>
+
+            <div class="section-buttons">
+                <a href="#" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
+                <a href="#" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
+            </div>
+        </section>
+
+        <!-- Section 4: Road Lighting -->
+        <section class="section" id="lighting">
+            <img class="section-bg" src="assets/images/bento_lighting_1781722424659.png" alt="Road Lighting">
+            <div class="section-overlay"></div>
+            
+            <div class="section-content">
+                <h2 class="section-title" data-key="light_title">Yol İşıqlandırması</h2>
+                <p class="section-subtitle" data-key="light_subtitle">Ağıllı idarəetmə ilə 70% enerji qənaəti</p>
+            </div>
+
+            <div class="section-buttons">
+                <a href="#" class="btn-tesla btn-dark" data-key="btn_order">İndi sifariş ver</a>
+                <a href="#" class="btn-tesla btn-light" data-key="btn_learn">Daha çox öyrən</a>
+            </div>
+        </section>
+
+        <!-- Section 5: Projects / Final Contact -->
+        <section class="section" id="projects">
+            <img class="section-bg" src="assets/images/hero_solar_1781721115110.png" alt="Projects">
+            <div class="section-overlay" style="background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.8) 100%);"></div>
+            
+            <div class="section-content">
+                <h2 class="section-title" data-key="projects_title">Cəbrayıl Mega Layihəsi</h2>
+                <p class="section-subtitle" data-key="projects_subtitle">Azərbaycanda 200+ icra edilmiş layihədən biri.</p>
+            </div>
+
+            <div class="section-buttons" id="contact" style="margin-bottom: 12vh;">
+                <a href="mailto:ecoazenergy@gmail.com" class="btn-tesla btn-light" data-key="btn_contact">Bizimlə Əlaqə</a>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-links">
+                    <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
+                    <a href="#" data-key="footer_privacy">Gizlilik Siyasəti</a>
+                    <a href="#" data-key="footer_contact">Əlaqə: 050 250 19 53</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </footer>
+        </section>
+
     </div>
-  </nav>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu">
-    <a href="index.html" class="nav-link active">Ana Səhifə</a>
-    <a href="solar-panels.html" class="nav-link">Günəş Panelləri</a>
-    <a href="transformers.html" class="nav-link">Transformatorlar</a>
-    <a href="road-lighting.html" class="nav-link">Yol İşıqlandırması</a>
-    <a href="projects.html" class="nav-link">Layihələr</a>
-    <a href="about.html" class="nav-link">Haqqımızda</a>
-    <a href="contact.html" class="nav-link">Əlaqə</a>
-    <a href="contact.html" class="btn btn-primary mt-8">Konsultasiya Al</a>
-  </div>
+    <script>
+        // Language translations for Tesla Style
+        const translations = {
+            az: {
+                logo: "ECO AZ ENERGY", nav_solar: "Günəş Enerjisi", nav_transformer: "Transformatorlar", nav_lighting: "İşıqlandırma", nav_projects: "Layihələr",
+                hero_title: "Sabahı gücləndiririk.", hero_subtitle: "Daha təmiz və güclü bir gələcək üçün.",
+                solar_title: "Günəş Sistemləri", solar_subtitle: "On-Grid, Off-Grid və Hibrid Həllər",
+                trans_title: "Transformatorlar", trans_subtitle: "2500 KVA-a qədər gücləndirilmiş stansiyalar",
+                light_title: "Yol İşıqlandırması", light_subtitle: "Ağıllı idarəetmə ilə 70% enerji qənaəti",
+                projects_title: "Cəbrayıl Mega Layihəsi", projects_subtitle: "Azərbaycanda 200+ icra edilmiş layihədən biri.",
+                btn_explore: "Kəşf et", btn_consult: "Sifariş ver", btn_order: "İndi sifariş ver", btn_learn: "Daha çox öyrən", btn_contact: "Bizimlə Əlaqə",
+                footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Gizlilik Siyasəti", footer_contact: "Əlaqə: 050 250 19 53"
+            },
+            ru: {
+                logo: "ECO AZ ENERGY", nav_solar: "Солнечная Энергия", nav_transformer: "Трансформаторы", nav_lighting: "Освещение", nav_projects: "Проекты",
+                hero_title: "Укрепляем будущее.", hero_subtitle: "Для более чистого и сильного будущего.",
+                solar_title: "Солнечные Системы", solar_subtitle: "On-Grid, Off-Grid и Гибридные решения",
+                trans_title: "Трансформаторы", trans_subtitle: "Усиленные станции до 2500 КВА",
+                light_title: "Дорожное Освещение", light_subtitle: "Экономия энергии 70% с умным управлением",
+                projects_title: "Мегапроект Джабраил", projects_subtitle: "Один из 200+ реализованных проектов в Азербайджане.",
+                btn_explore: "Исследовать", btn_consult: "Заказать", btn_order: "Заказать сейчас", btn_learn: "Узнать больше", btn_contact: "Связаться с нами",
+                footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Политика Конфиденциальности", footer_contact: "Контакты: 050 250 19 53"
+            },
+            en: {
+                logo: "ECO AZ ENERGY", nav_solar: "Solar Energy", nav_transformer: "Transformers", nav_lighting: "Lighting", nav_projects: "Projects",
+                hero_title: "Powering tomorrow.", hero_subtitle: "For a cleaner and stronger future.",
+                solar_title: "Solar Systems", solar_subtitle: "On-Grid, Off-Grid and Hybrid Solutions",
+                trans_title: "Transformers", trans_subtitle: "Reinforced stations up to 2500 KVA",
+                light_title: "Road Lighting", light_subtitle: "70% energy savings with smart control",
+                projects_title: "Jabrayil Mega Project", projects_subtitle: "One of 200+ implemented projects in Azerbaijan.",
+                btn_explore: "Explore", btn_consult: "Order", btn_order: "Order Now", btn_learn: "Learn More", btn_contact: "Contact Us",
+                footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Privacy Policy", footer_contact: "Contact: 050 250 19 53"
+            }
+        };
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-glow"></div>
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Azərbaycanın Hər Qarışında<br><span class="title-gradient">Günəşin Gücü</span></h1>
-          <p class="hero-subtitle">2004-cü ildən 200+ uğurlu layihə.<br>Peşəkar quraşdırma, hüquqi dəstək və 1 il zəmanət ilə<br>gələcəyə enerji qatırıq.</p>
-          <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary">Layihələrimizə Bax</a>
-            <a href="contact.html" class="btn btn-outline">Pulsuz Konsultasiya</a>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-indicator">↓</div>
-    </section>
+        let currentLang = 'az';
 
-    <!-- Stats Section -->
-    <section class="stats-section fade-up">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="200">0</span>+</div>
-            <div class="stat-label">İcra Edilmiş Layihə</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="424">0</span></div>
-            <div class="stat-label">Ev — Cəbrayıl Mega Layihəsi</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="60">0</span>%</div>
-            <div class="stat-label">Enerji Xərci Azalması</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"><span class="counter-val" data-target="1">0</span> il</div>
-            <div class="stat-label">Uzaqdan Monitorinq Zəmanəti</div>
-          </div>
-        </div>
-      </div>
-    </section>
+        function applyLanguage(lang) {
+            const t = translations[lang];
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (t[key] !== undefined) {
+                    el.innerText = t[key];
+                }
+            });
+            const langBtn = document.getElementById('langBtn');
+            if (langBtn) {
+                langBtn.innerText = lang.toUpperCase();
+            }
+            currentLang = lang;
+        }
 
-    <!-- Services Section -->
-    <section class="services-section container">
-      <div class="section-header fade-up">
-        <div class="section-line"></div>
-        <h2 class="text-h2">Xidmətlərimiz</h2>
-      </div>
-      
-      <div class="services-grid">
-        <!-- Service 1 -->
-        <a href="solar-panels.html" class="card fade-up">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <div class="card-content">
-            <h3 class="text-h3 mb-2">Günəş Enerjisi Sistemləri</h3>
-            <p class="text-secondary text-small">On-Grid, Off-Grid və Hibrid sistemlər. AE-Solar, Longi, GoodWe brendləri ilə peşəkar quraşdırma.</p>
-            <span class="service-link">Ətraflı <span>→</span></span>
-          </div>
-        </a>
+        const selector = document.getElementById('langSelector');
+        const btn = document.getElementById('langBtn');
+        if (btn && selector) {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                selector.classList.toggle('open');
+            });
+            document.querySelectorAll('.lang-dropdown button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const lang = button.getAttribute('data-lang');
+                    if (lang) applyLanguage(lang);
+                    selector.classList.remove('open');
+                });
+            });
+            document.addEventListener('click', () => selector.classList.remove('open'));
+        }
 
-        <!-- Service 2 -->
-        <a href="transformers.html" class="card fade-up">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-          </svg>
-          <div class="card-content">
-            <h3 class="text-h3 mb-2">Transformator Quraşdırılması</h3>
-            <p class="text-secondary text-small">2500 KVA qədər güc transformatorları, paylayıcı şkaflar, kompensasiya qurğuları.</p>
-            <span class="service-link">Ətraflı <span>→</span></span>
-          </div>
-        </a>
-
-        <!-- Service 3 -->
-        <a href="road-lighting.html" class="card fade-up">
-          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2v20"></path>
-            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-          </svg>
-          <div class="card-content">
-            <h3 class="text-h3 mb-2">Yol İşıqlandırması</h3>
-            <p class="text-secondary text-small">LED işıqlandırma, avtonom günəş sistemləri, SCADA monitorinq.</p>
-            <span class="service-link">Ətraflı <span>→</span></span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Why Us Section -->
-    <section class="why-us-section">
-      <div class="container why-grid">
-        <div class="why-image-wrapper fade-up">
-          <img src="assets/images/why_us_1781721137866.png" alt="Eco Az Energy Mühəndislik" class="why-image-tag">
-        </div>
-        <div class="why-content">
-          <div class="section-header fade-up">
-            <div class="section-line"></div>
-            <h2 class="text-h2">Niyə Eco Az Energy?</h2>
-          </div>
-          
-          <div class="benefit-list">
-            <div class="benefit-item fade-up">
-              <div class="benefit-icon">✓</div>
-              <div>
-                <h4 class="text-primary" style="font-weight: 600;">Sübut edilmiş təcrübə</h4>
-                <p class="text-secondary text-small">200+ uğurlu layihə, dövlət qurumları ilə əməkdaşlıq.</p>
-              </div>
-            </div>
-            <div class="benefit-item fade-up">
-              <div class="benefit-icon">✓</div>
-              <div>
-                <h4 class="text-primary" style="font-weight: 600;">Dünya standartları</h4>
-                <p class="text-secondary text-small">Longi, GoodWe, Growatt — beynəlxalq sertifikatlı avadanlıqlar.</p>
-              </div>
-            </div>
-            <div class="benefit-item fade-up">
-              <div class="benefit-icon">✓</div>
-              <div>
-                <h4 class="text-primary" style="font-weight: 600;">60% enerji qənaəti</h4>
-                <p class="text-secondary text-small">Müştərilər enerji xərclərini əhəmiyyətli dərəcədə azaldır.</p>
-              </div>
-            </div>
-            <div class="benefit-item fade-up">
-              <div class="benefit-icon">✓</div>
-              <div>
-                <h4 class="text-primary" style="font-weight: 600;">Tam texniki dəstək</h4>
-                <p class="text-secondary text-small">Layihə hazırlığından quraşdırma və monitorinqə qədər.</p>
-              </div>
-            </div>
-            <div class="benefit-item fade-up">
-              <div class="benefit-icon">✓</div>
-              <div>
-                <h4 class="text-primary" style="font-weight: 600;">Hüquqi dəstək</h4>
-                <p class="text-secondary text-small">Şəbəkəyə geri satış üçün sənədləşmə, AYNA razılaşması.</p>
-              </div>
-            </div>
-            <div class="benefit-item fade-up">
-              <div class="benefit-icon">✓</div>
-              <div>
-                <h4 class="text-primary" style="font-weight: 600;">İnnovativ yanaşma</h4>
-                <p class="text-secondary text-small">Hibrid sistemlər, körpü inteqrasiyası — ən müasir həllər.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Partners Section -->
-    <section class="partners-section fade-up" id="partners">
-      <div class="container">
-        <h3 class="text-center text-secondary mb-6 text-small uppercase" style="letter-spacing: 0.1em;">Partnyorlarımız</h3>
-      </div>
-      <div class="marquee">
-        <!-- Duplicate for seamless scroll -->
-        <div style="display: flex;">
-          <span class="partner-logo">AE-Solar</span>
-          <span class="partner-logo">Longi</span>
-          <span class="partner-logo">GoodWe</span>
-          <span class="partner-logo">Growatt</span>
-          <span class="partner-logo">FAERS</span>
-          <span class="partner-logo">AE-Solar</span>
-          <span class="partner-logo">Longi</span>
-          <span class="partner-logo">GoodWe</span>
-          <span class="partner-logo">Growatt</span>
-          <span class="partner-logo">FAERS</span>
-        </div>
-        <div style="display: flex;">
-          <span class="partner-logo">AE-Solar</span>
-          <span class="partner-logo">Longi</span>
-          <span class="partner-logo">GoodWe</span>
-          <span class="partner-logo">Growatt</span>
-          <span class="partner-logo">FAERS</span>
-          <span class="partner-logo">AE-Solar</span>
-          <span class="partner-logo">Longi</span>
-          <span class="partner-logo">GoodWe</span>
-          <span class="partner-logo">Growatt</span>
-          <span class="partner-logo">FAERS</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section class="cta-banner">
-      <div class="cta-pattern"></div>
-      <div class="container cta-content fade-up">
-        <h2 class="text-h2 mb-4">Günəş enerjisindən <span class="accent-green">qənaət edin</span></h2>
-        <p class="text-secondary mb-6">Pulsuz konsultasiya alın və enerji xərclərinizi 60%-ə qədər azaldın</p>
-        <a href="contact.html" class="btn btn-primary">Bizimlə Əlaqə</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col brand-col">
-          <a href="index.html" class="nav-logo mb-4" style="display: flex; gap: 0.5rem; font-weight: 600;">Eco<span class="logo-dot">⬤</span>Az Energy</a>
-          <p class="text-secondary text-small">2004-cü ildən Azərbaycanda enerji həlləri.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Xidmətlər</h4>
-          <div class="footer-links">
-            <a href="solar-panels.html" class="footer-link">Günəş Enerjisi</a>
-            <a href="transformers.html" class="footer-link">Transformatorlar</a>
-            <a href="road-lighting.html" class="footer-link">Yol İşıqlandırması</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Şirkət</h4>
-          <div class="footer-links">
-            <a href="about.html" class="footer-link">Haqqımızda</a>
-            <a href="projects.html" class="footer-link">Layihələr</a>
-            <a href="#partners" class="footer-link">Partnyorlar</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Əlaqə</h4>
-          <div class="footer-links text-small text-secondary">
-            <p>ecoazenergy@gmail.com</p>
-            <p>+994 50 250 19 53</p>
-            <p>Bakı ş. Ağ Şəhər</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Eco Az Energy. Bütün hüquqlar qorunur.</p>
-        <p>Azərbaycanda hazırlanıb 🇦🇿</p>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#" id="back-to-top">↑</a>
-
-  <script src="js/main.js"></script>
-  <script src="js/counter.js"></script>
+        applyLanguage('az');
+    </script>
 </body>
 </html>
