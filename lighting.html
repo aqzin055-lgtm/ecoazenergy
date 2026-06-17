@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Eco AzEnergy - Lighting</title>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,72 +35,48 @@
         <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
         <a href="projects.html" data-key="nav_projects">Layihələr</a>
         <a href="about.html" data-key="nav_about">Haqqımızda</a>
-        <div style="margin-top: 24px; display: flex; gap: 16px;">
-            <button onclick="applyLanguage('az'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">AZ</button>
-            <button onclick="applyLanguage('ru'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">RU</button>
-            <button onclick="applyLanguage('en'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">EN</button>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <h1 class="hero-title" data-key="li_h1_title">Yol İşıqlandırması</h1>
+            <p class="hero-subtitle" data-key="li_h1_sub">Gələcəyin yollarını işıqlandırırıq.</p>
+            <div class="hero-img-container reveal" style="max-width: 900px;">
+                <img src="assets/images/bento_lighting_1781722424659.png" alt="Lighting" class="hero-img">
+            </div>
+        </section>
+
+        <!-- Bento Grid Sections -->
+        <section class="bento-section">
+            <div class="bento-grid">
+                
+                <div class="bento-item reveal" style="text-align: center; padding: 60px 40px;">
+                    <div style="font-size: 64px; margin-bottom: 24px;">⚡</div>
+                    <h3 class="bento-title" data-key="li_s1">LED Sistemlər</h3>
+                    <p class="bento-desc" data-key="li_s1_desc">Yüksək güclü və qənaətcil dirəklər.</p>
+                </div>
+
+                <div class="bento-item reveal" style="text-align: center; padding: 60px 40px;">
+                    <div style="font-size: 64px; margin-bottom: 24px;">📱</div>
+                    <h3 class="bento-title" data-key="li_s2">Ağıllı İdarəetmə</h3>
+                    <p class="bento-desc" data-key="li_s2_desc">Avtomatik sensor və uzaqdan nəzarət.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
+            <div class="footer-links">
+                <a href="#" data-key="footer_privacy">Məxfilik</a>
+                <a href="#" data-key="footer_contact">+994 50 250 19 53</a>
+            </div>
         </div>
-    </div>
-
-    <div class="snap-container">
-        
-        <!-- Hero -->
-        <section class="section">
-            <img class="section-bg" src="assets/images/bento_lighting_1781722424659.png" alt="Lighting">
-            <div class="section-overlay"></div>
-            <div class="section-content">
-                <h1 class="section-title" data-key="li_h1_title">Yol İşıqlandırması</h1>
-                <p class="section-subtitle" data-key="li_h1_sub">Enerji sərfiyyatını 70% azaldın.</p>
-            </div>
-            <div class="section-buttons">
-                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_order">İndi sifariş ver</a>
-            </div>
-        </section>
-
-        <!-- Features -->
-        <section class="section white-bg" style="min-height: 100vh;">
-            <div class="section-content" style="margin-top: 20vh; margin-bottom: 80px;">
-                <h2 class="section-title" data-key="li_h2_title" style="color: #171a20;">Xüsusiyyətlər</h2>
-            </div>
-            
-            <div class="specs-grid" style="margin-bottom: 80px;">
-                <div class="spec-item">
-                    <div class="spec-value">⚡</div>
-                    <div class="spec-label" data-key="li_s1">Yüksək güclü LED dirəklər</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-value">👁️</div>
-                    <div class="spec-label" data-key="li_s2">Avtomatik sensor sistemi</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-value">📱</div>
-                    <div class="spec-label" data-key="li_s3">Mərkəzləşdirilmiş idarəetmə</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sample Project -->
-        <section class="section">
-            <img class="section-bg" src="assets/images/bento_lighting_1781722424659.png" alt="Lighting Project">
-            <div class="section-overlay" style="background: rgba(0,0,0,0.6);"></div>
-            <div class="section-content">
-                <h2 class="section-title" data-key="li_h3_title">Modern Şəhər Layihəsi</h2>
-                <p class="section-subtitle" data-key="li_h3_sub">Bakıətrafı magistral yolların işıqlandırılması.</p>
-            </div>
-            <div class="section-buttons">
-                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_contact">Əlaqə saxla</a>
-            </div>
-            
-            <footer class="footer">
-                <div class="footer-links">
-                    <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
-                    <a href="#" data-key="footer_privacy">Gizlilik Siyasəti</a>
-                    <a href="#" data-key="footer_contact">Əlaqə: 050 250 19 53</a>
-                </div>
-            </footer>
-        </section>
-
-    </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

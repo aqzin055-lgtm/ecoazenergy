@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Eco AzEnergy - Transformers</title>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,74 +35,62 @@
         <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
         <a href="projects.html" data-key="nav_projects">Layihələr</a>
         <a href="about.html" data-key="nav_about">Haqqımızda</a>
-        <div style="margin-top: 24px; display: flex; gap: 16px;">
-            <button onclick="applyLanguage('az'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">AZ</button>
-            <button onclick="applyLanguage('ru'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">RU</button>
-            <button onclick="applyLanguage('en'); document.getElementById('closeMenu').click();" style="border:1px solid #171a20; padding:8px; background:none; border-radius:4px;">EN</button>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <h1 class="hero-title" data-key="tr_h1_title">Transformatorlar</h1>
+            <p class="hero-subtitle" data-key="tr_h1_sub">10/0.4 kV və 35 kV gərginlik. Tam Xidmət.</p>
+            <div class="hero-img-container reveal" style="max-width: 900px;">
+                <img src="assets/images/bento_transformer_1781722413479.png" alt="Transformers" class="hero-img">
+            </div>
+        </section>
+
+        <!-- Services Bento -->
+        <section class="bento-section">
+            <div class="bento-grid" style="grid-template-columns: repeat(3, 1fr);">
+                
+                <div class="bento-item reveal" style="text-align: center;">
+                    <h2 class="bento-title" style="font-size: 48px; color: var(--apple-blue);">01</h2>
+                    <h3 class="bento-title" data-key="tr_s1">Quraşdırma</h3>
+                    <p class="bento-desc" data-key="tr_s1_desc">Transformatorların alınması və qurulması.</p>
+                </div>
+
+                <div class="bento-item reveal" style="text-align: center;">
+                    <h2 class="bento-title" style="font-size: 48px; color: var(--apple-blue);">02</h2>
+                    <h3 class="bento-title" data-key="tr_s2">Yarımstansiyalar</h3>
+                    <p class="bento-desc" data-key="tr_s2_desc">Açıq və qapalı tipli stansiyalar.</p>
+                </div>
+
+                <div class="bento-item reveal" style="text-align: center;">
+                    <h2 class="bento-title" style="font-size: 48px; color: var(--apple-blue);">03</h2>
+                    <h3 class="bento-title" data-key="tr_s3">Hava Xətləri</h3>
+                    <p class="bento-desc" data-key="tr_s3_desc">Yüksək gərginlikli xətlərin çəkilməsi.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Dark Specs -->
+        <section class="dark-section reveal">
+            <h1 class="hero-title" style="font-size: clamp(60px, 10vw, 120px);">2500 KVA</h1>
+            <p class="hero-subtitle">Maksimum Güc</p>
+            <h1 class="hero-title mt-4" style="font-size: clamp(40px, 8vw, 80px);">35 kV</h1>
+            <p class="hero-subtitle">Maksimum Gərginlik</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
+            <div class="footer-links">
+                <a href="#" data-key="footer_privacy">Məxfilik</a>
+                <a href="#" data-key="footer_contact">+994 50 250 19 53</a>
+            </div>
         </div>
-    </div>
-
-    <div class="snap-container">
-        
-        <!-- Hero -->
-        <section class="section">
-            <img class="section-bg" src="assets/images/bento_transformer_1781722413479.png" alt="Transformer">
-            <div class="section-overlay"></div>
-            <div class="section-content">
-                <h1 class="section-title" data-key="tr_h1_title">Transformator Quraşdırılması</h1>
-                <p class="section-subtitle" data-key="tr_h1_sub">10/0.4 kV və 35 kV gərginlik. 2500 KVA-a qədər.</p>
-            </div>
-            <div class="section-buttons">
-                <a href="about.html#contact" class="btn-tesla btn-light" data-key="btn_order">İndi sifariş ver</a>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section class="section white-bg" style="min-height: 100vh;">
-            <div class="section-content" style="margin-top: 20vh; margin-bottom: 80px;">
-                <h2 class="section-title" data-key="tr_h2_title" style="color: #171a20;">Tam Xidmət Dövrü</h2>
-            </div>
-            
-            <div class="specs-grid" style="margin-bottom: 80px;">
-                <div class="spec-item">
-                    <div class="spec-value">01</div>
-                    <div class="spec-label" data-key="tr_s1">Transformatorların Alınması və Quraşdırılması</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-value">02</div>
-                    <div class="spec-label" data-key="tr_s2">10 kV və 35 kV Açıq/Qapalı Yarımstansiyalar</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-value">03</div>
-                    <div class="spec-label" data-key="tr_s3">Yüksək Gərginlikli Hava Xətlərinin Çəkilməsi</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Specs -->
-        <section class="section" style="background-color: #000;">
-            <div class="section-content" style="padding-top:20vh;">
-                <h2 class="section-title" data-key="tr_h3_title">Texniki Göstəricilər</h2>
-                <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; margin-top: 60px;">
-                    <h1 style="font-size: clamp(60px, 10vw, 120px); font-weight:600; letter-spacing: -0.04em;">2500</h1>
-                    <p style="font-size:20px; color:#86868b; font-weight:500;">KVA Max Güc</p>
-                </div>
-                <div style="display:flex; justify-content:center; align-items:center; flex-direction:column; margin-top: 40px;">
-                    <h1 style="font-size: clamp(40px, 6vw, 80px); font-weight:600; letter-spacing: -0.04em;">35 kV</h1>
-                    <p style="font-size:16px; color:#86868b; font-weight:500;">Max Gərginlik</p>
-                </div>
-            </div>
-            
-            <footer class="footer">
-                <div class="footer-links">
-                    <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
-                    <a href="#" data-key="footer_privacy">Gizlilik Siyasəti</a>
-                    <a href="#" data-key="footer_contact">Əlaqə: 050 250 19 53</a>
-                </div>
-            </footer>
-        </section>
-
-    </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
