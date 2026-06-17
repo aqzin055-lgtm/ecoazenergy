@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Əlaqə — Eco AzEnergy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-hero { padding: 120px 0 60px; text-align: center; }
+        .contact-hero h1 { font-size: 48px; margin-bottom: 16px; }
+        .contact-hero p { font-size: 20px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px 0;
+        }
+        
+        .contact-info-card {
+            background: var(--surface-color);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--border-color);
+        }
+        .contact-info-card h3 { font-size: 24px; margin-bottom: 24px; color: var(--accent-primary); }
+        .info-item { margin-bottom: 24px; }
+        .info-item h4 { font-size: 14px; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;}
+        .info-item p { font-size: 18px; color: var(--text-primary); }
+        
+        .contact-form {
+            background: var(--surface-color);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--border-color);
+        }
+        .form-group { margin-bottom: 24px; }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: rgba(0,0,0,0.5);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eco AzEnergy</a>
+            <div class="nav-links">
+                <a href="gunes-panelleri.html" data-key="nav_panels">Günəş Panelləri</a>
+                <a href="invertorlar.html" data-key="nav_inverters">İnvertorlar</a>
+                <a href="transformatorlar.html" data-key="nav_transformers">Transformatorlar</a>
+                <a href="yol-isiqlandirmasi.html" data-key="nav_lighting">İşıqlandırma</a>
+                <div class="lang-selector" id="langSelector">
+                    <button class="lang-btn" id="langBtn">AZ ▼</button>
+                    <div class="lang-dropdown">
+                        <button data-lang="az">Azərbaycanca</button>
+                        <button data-lang="en">English</button>
+                        <button data-lang="ru">Русский</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-hero reveal">
+            <div class="container">
+                <h1 class="text-gradient" data-key="btn_contact">Bizimlə əlaqə</h1>
+                <p>Layihənizi bizimlə müzakirə edin və ya məhsullarımız haqqında daha çox məlumat alın.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-info-card reveal">
+                    <h3>Ünvanlarımız</h3>
+                    
+                    <div class="info-item">
+                        <h4>Showroom</h4>
+                        <p>Bakı ş. Ağ Şəhər Yaşıl Ada 2. küçəsi</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h4>Şöbə</h4>
+                        <p>Zaqatala r. Bizim İnşaat</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>E-poçt</h4>
+                        <p>ecoazenergy@gmail.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Telefon</h4>
+                        <p>+994 50 250 19 53</p>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <h3 style="font-size: 24px; margin-bottom: 24px;">Mesaj Göndər</h3>
+                    <form onsubmit="event.preventDefault(); alert('Mesajınız uğurla göndərildi! Qısa zamanda sizinlə əlaqə saxlayacağıq.');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız və Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Əlaqə nömrəniz" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mesajınız və ya layihə barədə məlumat" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Göndər</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Eco AzEnergy. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

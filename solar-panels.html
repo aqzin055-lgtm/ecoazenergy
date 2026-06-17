@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Günəş Panelləri | Eco Az Energy</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/pages/solar.css">
+</head>
+<body class="fade-out">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">Eco<span class="logo-dot">⬤</span>Az Energy</a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Ana Səhifə</a>
+        <div class="nav-dropdown-wrapper">
+          <a href="solar-panels.html" class="nav-link active">Günəş Panelləri</a>
+          <div class="nav-dropdown">
+            <a href="solar-panels.html" class="dropdown-item">On-Grid Sistemlər</a>
+            <a href="solar-panels.html" class="dropdown-item">Off-Grid Sistemlər</a>
+            <a href="solar-panels.html" class="dropdown-item">Hibrid Sistemlər</a>
+            <a href="#calculator" class="dropdown-item">Günəş Paneli Hesablama</a>
+          </div>
+        </div>
+        <a href="transformers.html" class="nav-link">Transformatorlar</a>
+        <a href="road-lighting.html" class="nav-link">Yol İşıqlandırması</a>
+        <a href="projects.html" class="nav-link">Layihələr</a>
+        <a href="about.html" class="nav-link">Haqqımızda</a>
+        <a href="contact.html" class="nav-link">Əlaqə</a>
+      </div>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Konsultasiya Al</a>
+      </div>
+      <div class="mobile-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html" class="nav-link">Ana Səhifə</a>
+    <a href="solar-panels.html" class="nav-link active">Günəş Panelləri</a>
+    <a href="transformers.html" class="nav-link">Transformatorlar</a>
+    <a href="road-lighting.html" class="nav-link">Yol İşıqlandırması</a>
+    <a href="projects.html" class="nav-link">Layihələr</a>
+    <a href="about.html" class="nav-link">Haqqımızda</a>
+    <a href="contact.html" class="nav-link">Əlaqə</a>
+    <a href="contact.html" class="btn btn-primary mt-8">Konsultasiya Al</a>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <div class="container fade-up">
+        <div class="breadcrumb">
+          <a href="index.html">Ana Səhifə</a> <span>/</span> Günəş Panelləri
+        </div>
+        <h1 class="text-h1 mb-4">Günəş Paneli <span class="title-gradient">Sistemləri</span></h1>
+        <p class="text-secondary max-w-2xl mx-auto">Eviniz və ya biznesiniz üçün ən uyğun günəş enerjisi həllini birlikdə tapaq.</p>
+      </div>
+    </header>
+
+    <!-- System Types Section -->
+    <section class="systems-section container fade-up">
+      <div class="services-grid">
+        <!-- On-Grid -->
+        <div class="card system-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+            <line x1="9" y1="21" x2="9" y2="9"></line>
+          </svg>
+          <h3 class="text-h3 mb-2">On-Grid Sistem</h3>
+          <p class="text-secondary text-small mb-4">Elektrik şəbəkəsinə birbaşa qoşulma. Artıq enerjini şəbəkəyə geri satış imkanı. Ən sərfəli investisiya.</p>
+          <div class="system-features">
+            <div class="feature-item"><span class="feature-icon check">✓</span> Şəbəkəyə geri satış</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Ən aşağı qiymət</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Sürətli geri dönüş</div>
+            <div class="feature-item"><span class="feature-icon cross">✗</span> Elektrik kəsilməsində işləmir</div>
+          </div>
+          <a href="#calculator" class="btn btn-outline">Hesabla</a>
+        </div>
+
+        <!-- Hibrid -->
+        <div class="card system-card popular">
+          <div class="badge popular-badge">Ən Populyar</div>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path>
+            <line x1="23" y1="13" x2="23" y2="11"></line>
+            <path d="M9 13l4-8v6h2l-4 8v-6z"></path>
+          </svg>
+          <h3 class="text-h3 mb-2">Hibrid Sistem</h3>
+          <p class="text-secondary text-small mb-4">On-Grid və Off-Grid-in birləşməsi. Həm şəbəkə, həm batareya dəstəyi — maksimum etibarlılıq.</p>
+          <div class="system-features">
+            <div class="feature-item"><span class="feature-icon check">✓</span> Şəbəkə + batareya dəstəyi</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Elektrik kəsilməsində işləyir</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Geri satış mümkündür</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Ən etibarlı həll</div>
+          </div>
+          <a href="#calculator" class="btn btn-primary">Hesabla</a>
+        </div>
+
+        <!-- Off-Grid -->
+        <div class="card system-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect>
+            <line x1="2" y1="10" x2="22" y2="10"></line>
+            <line x1="12" y1="6" x2="12" y2="18"></line>
+            <line x1="7" y1="6" x2="7" y2="18"></line>
+            <line x1="17" y1="6" x2="17" y2="18"></line>
+          </svg>
+          <h3 class="text-h3 mb-2">Off-Grid Sistem</h3>
+          <p class="text-secondary text-small mb-4">Şəbəkəsiz ərazilərdə tam avtonom. Günəş paneli + akkumlyator + invertor. Gecə boyunca fasiləsiz enerji.</p>
+          <div class="system-features">
+            <div class="feature-item"><span class="feature-icon check">✓</span> Tam müstəqillik</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Fasiləsiz enerji</div>
+            <div class="feature-item"><span class="feature-icon check">✓</span> Uzaq ərazilər üçün ideal</div>
+            <div class="feature-item"><span class="feature-icon cross">✗</span> Daha yüksək başlanğıc xərc</div>
+          </div>
+          <a href="#calculator" class="btn btn-outline">Hesabla</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="container fade-up">
+      <div class="section-header">
+        <h2 class="text-h2">Günəş Panelləri Brendlərimiz</h2>
+      </div>
+      
+      <div class="tabs-container">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-target="brand-ae">AE-Solar</button>
+          <button class="tab-btn" data-target="brand-longi">Longi</button>
+          <button class="tab-btn" data-target="brand-faers">FAERS</button>
+        </div>
+
+        <!-- AE-Solar Tab -->
+        <div class="tab-content active" id="brand-ae">
+          <p class="text-secondary mb-6">Almaniya texnologiyası ilə yüksək keyfiyyət və səmərəlilik.</p>
+          <div class="products-grid">
+            <div class="card product-card">
+              <div class="product-image">
+                <svg class="product-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <div class="product-info">
+                <h4 class="text-primary font-semibold mb-1">Aurora Series</h4>
+                <p class="text-secondary text-small">550W Monokristal Günəş Paneli</p>
+                <div class="product-specs">
+                  <span class="spec-badge">Verimlilik: 21.3%</span>
+                  <span class="spec-badge">Tier 1</span>
+                </div>
+                <div class="product-price-range">₳ ₳ <span class="price-inactive">₳</span></div>
+              </div>
+            </div>
+            
+            <div class="card product-card">
+              <div class="product-image">
+                <svg class="product-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <div class="product-info">
+                <h4 class="text-primary font-semibold mb-1">Shadow Series</h4>
+                <p class="text-secondary text-small">440W Kölgəyə davamlı texnologiya</p>
+                <div class="product-specs">
+                  <span class="spec-badge">Kölgə Toleransı</span>
+                </div>
+                <div class="product-price-range">₳ ₳ ₳</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Longi Tab -->
+        <div class="tab-content" id="brand-longi">
+          <p class="text-secondary mb-6">Dünyanın ən böyük günəş paneli istehsalçılarından biri.</p>
+          <div class="products-grid">
+            <div class="card product-card">
+              <div class="product-image">
+                <svg class="product-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <div class="product-info">
+                <h4 class="text-primary font-semibold mb-1">Hi-MO 6</h4>
+                <p class="text-secondary text-small">580W TOPCon Texnologiyası</p>
+                <div class="product-specs">
+                  <span class="spec-badge">Verimlilik: 22.5%</span>
+                  <span class="spec-badge">HPBC</span>
+                </div>
+                <div class="product-price-range">₳ ₳ ₳</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAERS Tab -->
+        <div class="tab-content" id="brand-faers">
+          <p class="text-secondary mb-6">Etibarlı və büdcə dostu həllər.</p>
+          <div class="products-grid">
+            <div class="card product-card">
+              <div class="product-image">
+                <svg class="product-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="3" y1="15" x2="21" y2="15"></line>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                  <line x1="15" y1="3" x2="15" y2="21"></line>
+                </svg>
+              </div>
+              <div class="product-info">
+                <h4 class="text-primary font-semibold mb-1">FAERS 550W</h4>
+                <p class="text-secondary text-small">550W Monokristal Günəş Paneli</p>
+                <div class="product-specs">
+                  <span class="spec-badge">Monokristal</span>
+                </div>
+                <div class="product-price-range">₳ <span class="price-inactive">₳ ₳</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inverters Section -->
+    <section class="container fade-up mt-8">
+      <div class="section-header">
+        <h2 class="text-h2">İnvertorlar</h2>
+      </div>
+      
+      <div class="tabs-container">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-target="brand-goodwe">GoodWe</button>
+          <button class="tab-btn" data-target="brand-growatt">Growatt</button>
+        </div>
+
+        <!-- GoodWe Tab -->
+        <div class="tab-content active" id="brand-goodwe">
+          <div class="products-grid">
+            <div class="card product-card">
+              <div class="product-image">
+                <svg class="product-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <line x1="4" y1="10" x2="20" y2="10"></line>
+                  <circle cx="12" cy="15" r="2"></circle>
+                </svg>
+              </div>
+              <div class="product-info">
+                <h4 class="text-primary font-semibold mb-1">GW10K-ET</h4>
+                <p class="text-secondary text-small">10kW Hibrid, Üç fazalı invertor</p>
+                <div class="product-specs">
+                  <span class="spec-badge">Hibrid</span>
+                  <span class="spec-badge">Üç Faza</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Growatt Tab -->
+        <div class="tab-content" id="brand-growatt">
+          <div class="products-grid">
+            <div class="card product-card">
+              <div class="product-image">
+                <svg class="product-placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <line x1="4" y1="10" x2="20" y2="10"></line>
+                  <line x1="12" y1="14" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <div class="product-info">
+                <h4 class="text-primary font-semibold mb-1">MIN 5000TL-X</h4>
+                <p class="text-secondary text-small">5kW On-Grid invertor</p>
+                <div class="product-specs">
+                  <span class="spec-badge">On-Grid</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calc-section fade-up" id="calculator">
+      <div class="container calc-container">
+        <div class="section-header text-center">
+          <h2 class="text-h2 mb-2">Günəş Paneli Ehtiyacınızı Hesablayın</h2>
+          <p class="text-secondary text-small">Təxmini xərc və qənaətinizi hesablamaq üçün aşağıdakı məlumatları daxil edin.</p>
+        </div>
+
+        <form id="solar-calculator" class="calc-form card glass">
+          <div class="calc-row">
+            <div>
+              <label class="text-secondary text-small">Aylıq elektrik xərciniz (AZN)</label>
+              <div class="range-slider-wrapper">
+                <span class="range-value-display" id="bill-display">150 AZN</span>
+                <input type="range" id="bill-slider" class="range-slider" min="50" max="2000" step="10" value="150">
+              </div>
+            </div>
+            
+            <div class="input-group">
+              <input type="number" id="area-input" class="input-field" placeholder=" " min="10">
+              <label class="input-label">Mövcud dam sahəsi (m²)</label>
+            </div>
+          </div>
+
+          <div class="calc-row">
+            <div>
+              <label class="text-secondary text-small mb-2" style="display:block;">Sistem Növü</label>
+              <div class="segmented-control">
+                <button type="button" class="segment-btn active" data-value="on-grid">On-Grid</button>
+                <button type="button" class="segment-btn" data-value="hibrid">Hibrid</button>
+                <button type="button" class="segment-btn" data-value="off-grid">Off-Grid</button>
+              </div>
+            </div>
+
+            <div>
+              <label class="text-secondary text-small mb-2" style="display:block;">Obyekt Növü</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="building_type" value="home" checked> Ev
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="building_type" value="business"> Biznes
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%; margin-top:var(--space-4);" id="calc-btn">Sistemi Hesabla</button>
+
+          <!-- Results -->
+          <div class="calc-results" id="calc-results">
+            <h4 class="text-primary text-center mb-4 font-semibold">İlkin Nəticələr</h4>
+            <div class="results-grid">
+              <div class="result-item">
+                <div class="result-value"><span id="res-kw">0</span> kW</div>
+                <div class="result-label">Tövsiyə Olunan Güc</div>
+              </div>
+              <div class="result-item">
+                <div class="result-value"><span id="res-panels">0</span></div>
+                <div class="result-label">Təxmini Panel Sayı</div>
+              </div>
+              <div class="result-item">
+                <div class="result-value"><span id="res-roi">0</span> il</div>
+                <div class="result-label">Geri Dönüş Müddəti</div>
+              </div>
+              <div class="result-item result-highlight">
+                <div class="result-value"><span id="res-investment">0</span> AZN</div>
+                <div class="result-label">Təxmini İnvestisiya</div>
+              </div>
+              <div class="result-item">
+                <div class="result-value"><span id="res-monthly">0</span> AZN</div>
+                <div class="result-label">Aylıq Qənaət</div>
+              </div>
+              <div class="result-item">
+                <div class="result-value"><span id="res-yearly">0</span> AZN</div>
+                <div class="result-label">İllik Qənaət</div>
+              </div>
+            </div>
+            <p class="text-center text-caption mt-4">
+              * Bu nəticələr yalnız məlumat xarakterlidir. Dəqiq hesablanma üçün əraziyə baxış keçirilməlidir.
+            </p>
+            <div class="text-center mt-4">
+               <a href="contact.html" class="btn btn-outline text-small">Dəqiq Təklif Alın</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <a href="index.html" class="nav-logo mb-4" style="display: flex; gap: 0.5rem; font-weight: 600;">Eco<span class="logo-dot">⬤</span>Az Energy</a>
+          <p class="text-secondary text-small">2004-cü ildən Azərbaycanda enerji həlləri.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Xidmətlər</h4>
+          <div class="footer-links">
+            <a href="solar-panels.html" class="footer-link">Günəş Enerjisi</a>
+            <a href="transformers.html" class="footer-link">Transformatorlar</a>
+            <a href="road-lighting.html" class="footer-link">Yol İşıqlandırması</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Şirkət</h4>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Haqqımızda</a>
+            <a href="projects.html" class="footer-link">Layihələr</a>
+            <a href="index.html#partners" class="footer-link">Partnyorlar</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Əlaqə</h4>
+          <div class="footer-links text-small text-secondary">
+            <p>ecoazenergy@gmail.com</p>
+            <p>+994 50 250 19 53</p>
+            <p>Bakı ş. Ağ Şəhər</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Eco Az Energy. Bütün hüquqlar qorunur.</p>
+        <p>Azərbaycanda hazırlanıb 🇦🇿</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="back-to-top">↑</a>
+
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>

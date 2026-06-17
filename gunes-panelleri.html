@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Günəş Panelləri — Eco AzEnergy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-detail-hero {
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        .product-detail-hero h1 { font-size: 48px; margin-bottom: 16px; }
+        .product-detail-hero p { font-size: 20px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Eco AzEnergy</a>
+            <div class="nav-links">
+                <a href="gunes-panelleri.html" data-key="nav_panels" class="active">Günəş Panelləri</a>
+                <a href="invertorlar.html" data-key="nav_inverters">İnvertorlar</a>
+                <a href="transformatorlar.html" data-key="nav_transformers">Transformatorlar</a>
+                <a href="yol-isiqlandirmasi.html" data-key="nav_lighting">İşıqlandırma</a>
+                <div class="lang-selector" id="langSelector">
+                    <button class="lang-btn" id="langBtn">AZ ▼</button>
+                    <div class="lang-dropdown">
+                        <button data-lang="az">Azərbaycanca</button>
+                        <button data-lang="en">English</button>
+                        <button data-lang="ru">Русский</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="product-detail-hero reveal">
+            <div class="container">
+                <h1 class="text-gradient">AE Solar, LonGi, FAERS</h1>
+                <p>Ən yüksək səmərəliliyə malik N-Type TOPCON və HJT texnologiyalı günəş panelləri.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="product-grid">
+                
+                <!-- AE Solar -->
+                <div class="product-card reveal">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=80" alt="AE Solar">
+                    <h3>AE Solar (Almaniya)</h3>
+                    <p>Meteor, Aurora və Comet seriyaları. 415W - 725W güc aralığı. 30 illik məhsul zəmanəti.</p>
+                    <a href="elaqe.html" class="btn btn-primary" data-key="btn_order_now">Sifariş et</a>
+                </div>
+
+                <!-- LonGi -->
+                <div class="product-card reveal">
+                    <img src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=600" alt="LonGi">
+                    <h3>LonGi Hi-MO 9</h3>
+                    <p>Dünyanın lider markası. 630W~670W. Yüksək rütubət və duz koroziyasına qarşı xüsusi qoruma.</p>
+                    <a href="elaqe.html" class="btn btn-primary" data-key="btn_order_now">Sifariş et</a>
+                </div>
+
+                <!-- FAERS -->
+                <div class="product-card reveal" style="grid-column: 1 / -1; max-width: 800px; margin: 0 auto;">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="FAERS">
+                    <h3>FAERS ULTRA (BƏƏ)</h3>
+                    <p>700-740W. N-Type TOPCON Bifacial Dual Glass texnologiyası. Maksimum güc və etibarlılıq.</p>
+                    <a href="elaqe.html" class="btn btn-primary" data-key="btn_order_now">Sifariş et</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Eco AzEnergy. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
