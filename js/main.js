@@ -1,7 +1,6 @@
 // DOM Elements
 const langBtn = document.getElementById('langBtn');
 const langDropdown = document.querySelector('.lang-dropdown');
-const langSelectors = document.querySelectorAll('[data-lang]');
 const menuBtn = document.getElementById('menuBtn');
 const mobileOverlay = document.getElementById('mobileOverlay');
 const closeMenu = document.getElementById('closeMenu');
@@ -23,6 +22,18 @@ if(langBtn && langDropdown) {
 if(menuBtn && mobileOverlay && closeMenu) {
     menuBtn.addEventListener('click', () => mobileOverlay.classList.add('active'));
     closeMenu.addEventListener('click', () => mobileOverlay.classList.remove('active'));
+}
+
+// Inject Mobile Language Selector
+if(mobileOverlay && !document.getElementById('mobileLangContainer')) {
+    const mobileLangHTML = `
+        <div id="mobileLangContainer" style="margin-top: 40px; display: flex; gap: 15px; justify-content: center; padding-bottom: 30px;">
+            <button data-lang="az" style="background:rgba(255,255,255,0.1); color:#fff; border:none; padding:10px 20px; border-radius:8px; font-size:16px; cursor:pointer;">AZ</button>
+            <button data-lang="en" style="background:rgba(255,255,255,0.1); color:#fff; border:none; padding:10px 20px; border-radius:8px; font-size:16px; cursor:pointer;">EN</button>
+            <button data-lang="ru" style="background:rgba(255,255,255,0.1); color:#fff; border:none; padding:10px 20px; border-radius:8px; font-size:16px; cursor:pointer;">RU</button>
+        </div>
+    `;
+    mobileOverlay.insertAdjacentHTML('beforeend', mobileLangHTML);
 }
 
 // Scroll Reveal Animation
@@ -175,6 +186,7 @@ const translations = {
         hyb_h1_title: "Hibrid Sistemlər", hyb_h1_sub: "Günəş və Küləyin gücü. Tam təhlükəsizlik və səmərəlilik.", hyb_h2: "Qüsursuz enerji təminatı", hyb_p1: "Hibrid sistemlər həm dövlət şəbəkəsinə satmaq (On-Grid), həm də batareyalarda enerji ehtiyatı saxlamaq (Off-Grid) funksiyalarını vahid bir platformada birləşdirir. Zərurət yarandıqda, günəş panelləri ilə yanaşı külək turbinləri də sistemə inteqrasiya edilir ki, bu da 'ağıllı evlər' üçün təbii fəlakətlərdə belə işıqların sönməməsini təmin edir.",
         
         mdl_title: "Sifariş Formu", mdl_sub: "Məlumatlarınızı daxil edin, mütəxəssislərimiz sizinlə əlaqə saxlayacaq.", mdl_btn_send: "Sifariş Et",
+        mdl_name: "Adınız və Soyadınız", mdl_phone: "Əlaqə nömrəniz", mdl_addr: "Quraşdırma Ünvanı",
         footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Məxfilik", footer_contact: "+994 50 250 19 53"
     },
     en: {
@@ -240,6 +252,7 @@ const translations = {
         hyb_h1_title: "Hybrid Systems", hyb_h1_sub: "The power of Solar and Wind. Total safety and efficiency.", hyb_h2: "Flawless energy supply", hyb_p1: "Hybrid systems combine the functions of selling to the grid (On-Grid) and storing energy in batteries (Off-Grid) in a single platform. When necessary, wind turbines are integrated into the system alongside solar panels, ensuring lights never go out in 'smart homes' even during natural disasters.",
 
         mdl_title: "Order Form", mdl_sub: "Enter your details, and our specialists will contact you.", mdl_btn_send: "Order Now",
+        mdl_name: "Full Name", mdl_phone: "Phone Number", mdl_addr: "Installation Address",
         footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Privacy Policy", footer_contact: "+994 50 250 19 53"
     },
     ru: {
@@ -305,6 +318,7 @@ const translations = {
         hyb_h1_title: "Гибридные Системы", hyb_h1_sub: "Сила Солнца и Ветра. Полная безопасность и эффективность.", hyb_h2: "Безупречное энергоснабжение", hyb_p1: "Объединяет функции продажи в сеть и хранения в батареях. В 'умных домах' свет не гаснет даже при стихийных бедствиях благодаря интеграции солнечных панелей и ветряных турбин.",
 
         mdl_title: "Форма Заказа", mdl_sub: "Введите свои данные, и наши специалисты свяжутся с вами.", mdl_btn_send: "Заказать",
+        mdl_name: "Имя и Фамилия", mdl_phone: "Номер Телефона", mdl_addr: "Адрес Установки",
         footer_copyright: "Eco AzEnergy © 2026", footer_privacy: "Политика Конфиденциальности", footer_contact: "+994 50 250 19 53"
     }
 };
@@ -313,18 +327,15 @@ function applyTranslations(lang) {
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
         if(translations[lang] && translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-        }
-    });
-    
-    document.querySelectorAll('input[data-key]').forEach(el => {
-        const key = el.getAttribute('data-key');
-        if(translations[lang] && translations[lang][key]) {
-            el.placeholder = translations[lang][key];
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = translations[lang][key];
+            } else {
+                el.innerHTML = translations[lang][key];
+            }
         }
     });
 
-    langBtn.innerText = lang.toUpperCase();
+    if(langBtn) langBtn.innerText = lang.toUpperCase();
 }
 
 // Ensure proper initial language loading
@@ -336,16 +347,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const nameInput = document.querySelector('input[name="Ad_Soyad"]');
     const phoneInput = document.querySelector('input[name="Telefon"]');
     const addrInput = document.querySelector('input[name="Unvan"]');
-    if(nameInput) nameInput.placeholder = translations[currentLang].mdl_name;
-    if(phoneInput) phoneInput.placeholder = translations[currentLang].mdl_phone;
-    if(addrInput) addrInput.placeholder = translations[currentLang].mdl_addr;
+    if(nameInput) nameInput.placeholder = translations[currentLang].mdl_name || 'Adınız və Soyadınız';
+    if(phoneInput) phoneInput.placeholder = translations[currentLang].mdl_phone || 'Əlaqə nömrəniz';
+    if(addrInput) addrInput.placeholder = translations[currentLang].mdl_addr || 'Quraşdırma Ünvanı';
 });
 
-langSelectors.forEach(btn => {
-    btn.addEventListener('click', () => {
+// Bind all language buttons (desktop dropdown + mobile)
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-lang]');
+    if (btn) {
         const lang = btn.getAttribute('data-lang');
         localStorage.setItem('lang', lang);
         applyTranslations(lang);
-        langDropdown.classList.remove('show');
-    });
+        if(langDropdown) langDropdown.classList.remove('show');
+        if(mobileOverlay) mobileOverlay.classList.remove('active');
+    }
 });
