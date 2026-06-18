@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Eco AzEnergy - İnvertorlar</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo" data-key="logo">ECO AZ ENERGY</a>
+            <div class="nav-links">
+                <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+                <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+                <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+                <a href="projects.html" data-key="nav_projects">Layihələr</a>
+                <a href="about.html" data-key="nav_about">Haqqımızda</a>
+                <div class="lang-selector" id="langSelector"><button class="lang-btn" id="langBtn">AZ</button>
+                    <div class="lang-dropdown">
+                        <button data-lang="az">Azərbaycanca</button><button data-lang="ru">Русский</button><button data-lang="en">English</button>
+                    </div>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay">
+        <button class="close-menu" id="closeMenu">✕</button>
+        <a href="solar.html" data-key="nav_solar">Günəş Enerjisi</a>
+        <a href="transformers.html" data-key="nav_transformer">Transformatorlar</a>
+        <a href="lighting.html" data-key="nav_lighting">İşıqlandırma</a>
+        <a href="projects.html" data-key="nav_projects">Layihələr</a>
+        <a href="about.html" data-key="nav_about">Haqqımızda</a>
+    </div>
+
+    <!-- Cinematic Hero -->
+    <header class="cinematic-hero" style="height: 60vh;">
+        <img src="assets/images/hero_solar_1781721115110.png" alt="Inverters" class="hero-bg" style="filter: brightness(0.4);">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal active">
+            <h1 class="hero-title" data-key="inv_h1_title">İnvertorlar</h1>
+            <p class="hero-subtitle" data-key="inv_h1_sub">Günəş enerjisinin beyin mərkəzi. Ağıllı idarəetmə və SCADA monitorinqi.</p>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="bento-section">
+            <div class="bento-grid">
+                
+                <!-- GoodWe -->
+                <div class="bento-item bento-full reveal">
+                    <div class="bento-content">
+                        <h2 class="bento-title" data-key="inv_goodwe_title">GoodWe</h2>
+                        <p class="bento-desc" data-key="inv_goodwe_desc">Dünyanın qabaqcıl invertor istehsalçılarından biri. On-Grid, Off-Grid və Hibrid sistemlər üçün nəzərdə tutulmuş, son dərəcə stabil işləyən, uzaqdan idarəetmə və monitorinq sisteminə malik ağıllı invertorlar.</p>
+                        <div style="color: var(--apple-blue); font-weight: 500; font-size: 15px;">✓ Wi-Fi / LAN Monitorinq<br>✓ Hibrid və On-Grid dəstəyi<br>✓ Maksimum Təhlükəsizlik</div>
+                    </div>
+                    <div class="bento-img-container" style="background: rgba(255,255,255,0.02);">
+                        <img src="assets/images/bento_lighting_1781722424659.png" alt="GoodWe" class="bento-img" style="object-fit: contain; padding: 20px; filter: grayscale(1);">
+                    </div>
+                </div>
+
+                <!-- Growatt -->
+                <div class="bento-item bento-full reverse reveal">
+                    <div class="bento-content">
+                        <h2 class="bento-title" data-key="inv_growatt_title">Growatt</h2>
+                        <p class="bento-desc" data-key="inv_growatt_desc">Dünya üzrə ən çox satılan inverter brendlərindən biri. Sadə quraşdırma, istifadəçi dostu interfeys və yüksək enerji səmərəliliyi. Ev və kommersiya layihələri üçün qüsursuz işləmə imkanı.</p>
+                        <div style="color: var(--apple-blue); font-weight: 500; font-size: 15px;">✓ Ağıllı Batareya İdarəetməsi<br>✓ Asan Quraşdırma<br>✓ Qlobal Standartlar</div>
+                    </div>
+                    <div class="bento-img-container" style="background: rgba(255,255,255,0.02);">
+                        <img src="assets/images/bento_transformer_1781722413479.png" alt="Growatt" class="bento-img" style="object-fit: contain; padding: 20px; filter: grayscale(1);">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cinematic-hero reveal" style="height: auto; padding: 100px 20px; background: rgba(10, 132, 255, 0.05);">
+            <h2 style="font-size: clamp(28px, 5vw, 40px); color: #fff; margin-bottom: 24px; text-align: center;">24/7 Monitorinq Dəstəyi</h2>
+            <p style="font-size: 18px; color: var(--text-muted); margin-bottom: 40px; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto;">Bütün invertorlarımız quraşdırıldıqdan sonra smartfonunuzdakı tətbiq vasitəsilə izlənilə bilir. Siz hər an evinizin nə qədər enerji istehsal etdiyinə, nə qədərini şəbəkəyə satdığına və nə qədər qənaət etdiyinizə baxa bilərsiniz.</p>
+            <div style="text-align: center;">
+                <a href="about.html" class="btn btn-primary" style="padding: 16px 32px; font-size: 16px;">Sistem Sifariş Edin</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span data-key="footer_copyright">Eco AzEnergy © 2026</span>
+            <div class="footer-links">
+                <a href="#" data-key="footer_privacy">Məxfilik</a>
+                <a href="#" data-key="footer_contact">+994 50 250 19 53</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
